@@ -1,157 +1,16 @@
-/*const gamequestions [
-    {
-        question: 'September 27 is celebrated every year as',
-        answers: [
-            {text: 'A. Teachers Day', correct: false},
-            {text: 'B. National Integration Day', correct: false},
-            {text: 'C. World Tourism Day', correct: true},
-            {text: 'D. International Literacy Day', correct: false},
-        ] // answers end here
-    }, // first questions end here
+/* ------------------------------------------------------------------------------------------------------
+                                    KBC GAME DEVELOP BY UDAY CHUGH
+--------------------------------------------------------------------------------------------------------*/
+/* Preloader */ 
+$(window).on( "load", function() 
+{  
+	$(".box-loader").delay(0).fadeOut("slow"); 
+})
 
-
-    {
-        question: 'Who is the author of the epic Meghdoot?',
-        answers: [
-            {text: 'A. Vishakadatta', correct: false},
-            {text: 'B. Valmiki', correct: false},
-            {text: 'C. Banabhatta', correct: false},
-            {text: 'D. Kalidas', correct: true},
-        ] // answers end here
-    }, // second questions end here
-    
-    {
-        question: 'Which of the following is observed as Sports Day every year?',
-        answers: [
-            {text: 'A. 22nd April', correct: false},
-            {text: 'B. 26th July', correct: false},
-            {text: 'C. 29th August', correct: true},
-            {text: 'D. 2nd October', correct: false},
-        ] // answers end here
-    }, // third questions end here
-    
-    {
-        question: 'Pongal is a popular festival of which state?',
-        answers: [
-            {text: 'Tamil Nadu', correct: true},
-            {text: 'Karnataka', correct: false},
-            {text: 'Kerela', correct: false},
-            {text: 'Andhra Pradesh', correct: false},
-        ] // answers end here
-    }, // fourth questions end here
-    
-    {
-        question: 'Ghototkach in Mahabharat was the son of',
-        answers: [
-            {text: 'A. Duryodhana', correct: false},
-            {text: 'B. Arjuna', correct: false},
-            {text: 'C. Yudhistra', correct: false},
-            {text: 'D. Bhima', correct: true},
-        ] // answers end here
-    }, // fifth questions end here
-    
-    {
-        question: 'The first month of the Indian national calendar is',
-        answers: [
-            {text: 'Magha', correct: false},
-            {text: 'Chaitra', correct: true},
-            {text: 'Ashadha', correct: false},
-            {text: 'Vaishakha', correct: false},
-        ] // answers end here
-    }, // sixth questions end here    
-
-    {
-        question: 'lSI stands for',
-        answers: [
-            {text: 'A. International Standards Institute', correct: false},
-            {text: 'B. Indian Statistical Institute', correct: false},
-            {text: 'C. Indian Standards Institute', correct: true},
-            {text: 'D. Indian Service Institute', correct: false},
-        ] // answers end here
-    }, // seventh questions end here
-    
-    {
-        question: 'Delhi became capital of India in',
-        answers: [
-            {text: 'A. 1910', correct: false},
-            {text: 'B. 1911', correct: true},
-            {text: 'C. 1916', correct: false},
-            {text: 'D. 1923', correct: false},
-        ] // answers end here
-    }, // eight questions end here
-    
-    {
-        question: 'Lunar month is equal to',
-        answers: [
-            {text: 'A. one earth day', correct: false},
-            {text: 'B. 14 earth days', correct: false},
-            {text: 'C. 28 earth days', correct: true},
-            {text: 'D. 365 days', correct: false},
-        ] // answers end here
-    }, // ninth questions end here
-    
-    {
-        question: 'Who was awarded the Padma Vibhushan on the 50th Republic Day in 2000 ?',
-        answers: [
-            {text: 'A. Lata Mangeshkar', correct: true},
-            {text: 'B. Amitabh Bachchan', correct: false},
-            {text: 'C. Shabana Azmi', correct: false},
-            {text: 'D. Dev Anand', correct: false},
-        ] // answers end here
-    }, // tenth questions end here
-    
-    {
-        question: 'Rial is the currency of ',
-        answers: [
-            {text: 'A. Iran', correct: true},
-            {text: 'B. Indonesia', correct: false},
-            {text: 'C. Zambia', correct: false},
-            {text: 'D. Namibia', correct: false},
-        ] // answers end here
-    }, // elevnth questions end here
-    
-    {
-        question: 'Which of the following combinations of country and its national games is correct?',
-        answers: [
-            {text: 'A. Australia - Football', correct: false},
-            {text: 'B. Japan - Bull Fighting', correct: false},
-            {text: 'C. U.S.A. - Baseball', correct: true},
-            {text: 'D. India - Cricket', correct: false},
-        ] // answers end here
-    }, // twelth questions end here
-    
-    {
-        question: 'Who among the following wrote "Glimpses of World History" ?',
-        answers: [
-            {text: 'A. Mahatma Gandhi', correct: false},
-            {text: 'B. Rajendra Prasad', correct: false},
-            {text: 'C. Mulk Raj Anand', correct: false},
-            {text: 'D. Jawaharlal Nehru', correct: true},
-        ] // answers end here
-    }, // thirteen questions end here
-    
-    {
-        question: 'What was the name of all the three soccer clubs set up with the help of Mahatama Gandhi in the early 20th century at Durban, Pretoria and Johannesburg?',
-        answers: [
-            {text: 'A. Truth Seekers', correct: false},
-            {text: 'B. Non-Violents', correct: false},
-            {text: 'C. Passive Resisters', correct: true},
-            {text: 'D. Non Co-operators', correct: false},
-        ] // answers end here
-    }, // forteen questions end here
-    
-    {
-        question: 'Which of these states has had the most number of its governors become presidents of India?',
-        answers: [
-            {text: 'A. Rajasthan', correct: false},
-            {text: 'B. Bihar', correct: true},
-            {text: 'C. punjab', correct: false},
-            {text: 'D. Andhra Pradesh', correct: false},
-        ] // answers end here
-    }, // fiftin questions end here
-
-] // end of questions */
-
+var audio = document.createElement('audio');
+audio.setAttribute('src','sound.mp3');
+audio.play();
+audio.preload();
 
 var score = 1;
 
@@ -161,7 +20,9 @@ function wrong1(){
         title: "Afsos Ye Galat Jawab",
         text: "winnig prize : ₹ 0",
         icon: "error",
-        button: "Restart",});
+        button: "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right1(){
@@ -169,7 +30,8 @@ function right1(){
         title: "Sahi Jawab", 
         text: "winning prize : ₹ 5,000",
         icon: "success",
-        button: "Aww Yiss!",});
+        button: "Aww Yiss!",
+        customClass: 'swal-wide'});
     var element = document.getElementById("one");
     element.classList.add("hidden");
     
@@ -194,7 +56,9 @@ function wrong2(){
         title: "Afsos Ye Galat Jawab",
         text: "winnig prize : ₹ 5,000",
         icon: "error",
-        button: "Restart",});
+        button: "Restart",}).then(function(){
+        location.reload();
+    });
     
     
 }
@@ -225,7 +89,9 @@ function right2(){
 
 //third
 function wrong3(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize :  ₹ 10,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize :  ₹ 10,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right3(){
@@ -250,7 +116,9 @@ function right3(){
 
 //fourth
 function wrong4(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize :₹ 20,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize :₹ 20,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right4(){
@@ -275,7 +143,9 @@ function right4(){
 
 //fifth
 function wrong5(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 40,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 40,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right5(){
@@ -301,7 +171,9 @@ function right5(){
 
 // sixth
 function wrong6(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 80,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 80,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right6(){
@@ -327,7 +199,9 @@ function right6(){
 
 //seventh
 function wrong7(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 1,60,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 1,60,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right7(){
@@ -353,7 +227,9 @@ function right7(){
 
 //eightth
 function wrong8(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 3,20,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 3,20,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right8(){
@@ -379,7 +255,9 @@ function right8(){
 
 //ninth
 function wrong9(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 6,40,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 6,40,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right9(){
@@ -405,7 +283,9 @@ function right9(){
 
 //tenth
 function wrong10(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 12,50,000", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 12,50,000", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right10(){
@@ -431,7 +311,9 @@ function right10(){
 
 // eleventh
 function wrong11(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 25 lakh", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 25 lakh", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right11(){
@@ -457,7 +339,9 @@ function right11(){
 
 //twelth
 function wrong12(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 50 lakh", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 50 lakh", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right12(){
@@ -483,7 +367,9 @@ function right12(){
 
 //thirteen
 function wrong13(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 1 crore", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 1 crore", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right13(){
@@ -509,7 +395,9 @@ function right13(){
 
 //forteen
 function wrong14(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 3 crore", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 3 crore", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right14(){
@@ -535,7 +423,9 @@ function right14(){
 
 //fifteen
 function wrong15(){
-    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 5 crore", icon: "error", button : "Restart",});
+    swal({title: "Afsos Ye Galat Jawab", text: "winning prize : ₹ 5 crore", icon: "error", button : "Restart",}).then(function(){
+        location.reload();
+    });
 }
 
 function right15(){

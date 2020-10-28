@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------------------------------------
+                                    KBC GAME DEVELOP BY UDAY CHUGH
+--------------------------------------------------------------------------------------------------------*/
+
 * {
     padding: 0;
     margin: 0;
@@ -154,9 +158,45 @@ button:disabled:hover{
 
 
 .final-congo{
-    border: 4px solid yellow;
+    border: 14px double lawngreen;
+    border-radius: 82% 18% 77% 23% / 28% 79% 21% 72%;
     margin: 30px;
     padding: 30px;
-    color: lightgreen;
+    color: lawngreen;
     letter-spacing: 2px;
+}
+
+.box-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-loader img{
+    height: 100%;
+    animation: anime 4s infinite linear;
+}
+
+@keyframes anime{
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.swal-wide{
+    background-color: rgba(63,255,106,0.69);
+
+                border: 3px solid white;
 }

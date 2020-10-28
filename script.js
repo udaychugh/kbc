@@ -7,11 +7,6 @@ $(window).on( "load", function()
 	$(".box-loader").delay(0).fadeOut("slow"); 
 })
 
-var audio = document.createElement('audio');
-audio.setAttribute('src','sound.mp3');
-audio.play();
-audio.preload();
-
 var score = 1;
 
 // first

@@ -1,0 +1,101 @@
+/*------------------------------         
+	Media Query 
+------------------------------*/ 
+ 
+@media all and (max-width: 1500px) 
+{  
+    /*no modification needed*/
+} 
+ 
+ 
+@media all and (max-width: 1200px) 
+{     
+    body{
+        overflow: hidden;
+    }
+    .oval{
+        font-size: 12px;
+    }
+    .qna{
+        font-size: 8px;
+    }
+    .ques{
+        font-size: 12px;
+    }
+    .option1{
+        font-size: 10px;
+    }
+    .amount li{
+        font-size: 12px;
+    }
+    img{
+        height: 80%;
+    }
+    .image{
+        padding: 0px 0px;
+    }
+    .qna{
+        padding: 8px;
+    }
+    .ques{
+        padding: 12px;
+    }
+    .credits{
+        position: none;
+    }
+} 
+ 
+ 
+@media all and (max-width: 991px) {      
+
+    body{
+        overflow-x: hidden;
+    }
+} 
+
+ 
+@media all and (max-width: 768px) {    
+    .box{
+        flex-wrap: wrap;
+    }
+    body{
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    img{
+        display: none;
+    }
+    .prize{
+        border-left: none;
+        padding-left: 0px;
+    }
+    .amount{
+        text-align: left;
+        padding-right: 100px;
+        margin-left: 0;
+    }
+} 
+
+ 
+ 
+@media all and (max-width: 480px) {    
+    .amount{
+        padding-right: 0;
+        margin-left: 50px;
+    }
+    .option1{
+        font-size: 9px;
+    }
+    .ques{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    body{
+        padding: 10px;
+    }
+    .credits{
+        font-size: 10px;
+    }
+} 
+ 
+ 

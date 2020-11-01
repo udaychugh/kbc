@@ -7,6 +7,8 @@ $(window).on( "load", function()
 	$(".box-loader").delay(0).fadeOut("slow"); 
 })
 
+
+
 var score = 1;
 
 // first
@@ -25,8 +27,7 @@ function right1(){
         title: "Sahi Jawab", 
         text: "winning prize : ₹ 5,000",
         icon: "success",
-        button: "Aww Yiss!",
-        customClass: 'swal-wide'});
+        button: "Aww Yiss!",});
     var element = document.getElementById("one");
     element.classList.add("hidden");
     
@@ -434,6 +435,8 @@ function right15(){
     
     var prize = document.getElementById("last");
     prize.classList.remove("hidden");
+    
+    
 }
 
 function fifty(){
@@ -490,7 +493,7 @@ function fifty(){
             break;
             
         case 14:
-            swal("Two Options are:", "C. Passive Resisters\n.Non Co-operatore");
+            swal("Two Options are:", "C. Passive Resisters\nD.Non Co-operatore");
             break;
             
         case 15:
@@ -505,7 +508,7 @@ function fifty(){
 function phone(){
     switch (score){
         case 1:
-            swal("Online friend advice", "may be correct ans is A");
+            swal("Online friend advice", "may be correct ans is C");
             break;
         case 2:
             swal("Online friend advice", "may be correct ans is D");
@@ -570,7 +573,7 @@ function phone(){
 function poll(){
     switch (score){
         case 1:
-            swal("Audience Poll", "A: 70%\nB: 18%\nC: 2%\nD: 10%");
+            swal("Audience Poll", "A: 2%\nB: 18%\nC: 70%\nD: 10%");
             break;
         case 2:
             swal("Audience Poll", "A: 40%\nB: 5%\nC: 5%\nD: 60%");
